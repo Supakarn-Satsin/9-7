@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Thai-Austrian Technical College</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon & Bootstrap -->
+  <link rel="shortcut icon" href="img/logo.gif" type="image/x-icon">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font -->
+  <style>
+    @font-face {
+      font-family: "MN Plara";
+      src: url("font/MN Plara.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      font-family: "MN Plara", sans-serif;
+      background-color: #f8f9fa;
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f50000;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+nav {
+  background-color: #333;
+  padding: 10px 20px;
+
+  /* ✅ เพิ่ม Flexbox เพื่อจัดกลาง */
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* ระยะห่างระหว่างลิงก์ */
+}
+
+
+    nav a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+    }
+
+    .section {
+      padding: 30px 20px;
+      max-width: 1200px;
+      margin: auto;
+      background-color: white;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .carousel-item img {
+      height: 600px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <h1 class="text-center m-0 d-flex justify-content-center align-items-center gap-3">
+    <img src="img/logo.gif" alt="โลโก้" style="height: 50px;">
+    วิทยาลัยเทคนิคสัตหีบ
+    <img src="img/logo.gif" alt="โลโก้" style="height: 50px;">
+  </h1>
+</header>
+
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#">หน้าแรก</a>
+    <a href="#">เกี่ยวกับ</a>
+    <a href="#">หลักสูตร</a>
+    <a href="#">ข่าว</a>
+    <a href="#">ติดต่อ</a>
+  </nav>
+
+  <!-- Banner Carousel -->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/p1.jpg" class="d-block w-100" alt="1">
+      </div>
+      <div class="carousel-item">
+        <img src="img/p2.jpg" class="d-block w-100" alt="2">
+      </div>
+      <div class="carousel-item">
+        <img src="img/p3.jpg" class="d-block w-100" alt="3">
+      </div>
+      <div class="carousel-item">
+        <img src="img/p4.jpg" class="d-block w-100" alt="4">
+      </div>
+    </div>
+  </div>
+
+  <!-- Section with Tabs -->
+  <div class="section">
+    <h2 class="mb-4">หัวข้อหลัก</h2>
+
+<!-- Tabs -->
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1"
+      type="button" role="tab" aria-controls="tab1" aria-selected="true">ข่าววิทยาลัย</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2"
+      type="button" role="tab" aria-controls="tab2" aria-selected="false">ทุนการศีกษา</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3"
+      type="button" role="tab" aria-controls="tab3" aria-selected="false">อื่นๆ</button>
+  </li>
+</ul>
+
+<!-- Tab Content -->
+<div class="tab-content" id="myTabContent">
+  <!-- แท็บที่ 1 -->
+  <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab" tabindex="0">
+    <div class="container mt-5">
+      <div class="row row-cols-1 row-cols-md-4 g-4 mt-3">
+        <div class="col">
+          <div class="card h-100">
+            <img src="tab/1.jpg" class="card-img-top " alt="...">
+            <div class="card-body text-center">
+              <p class="card-text">เข้าร่วมการอบรมหลักสูตร “ส่งเสริมสุขภาพ ความปลอดภัย และสิ่งแวดล้อม เพื่ออุตสาหกรรมที่ยั่งยืน”</p>
+              <button class="btn btn-primary">เนื้อหา</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="tab/2.jpg" class="card-img-top " alt="...">
+            <div class="card-body text-center">
+              <p class="card-text">วิทยาลัยเทคนิคเชียงใหม่ เข้าศึกษาดูงานด้านการจัดการเรียนการสอน สาขาช่างอากาศยาน</p>
+              <button class="btn btn-primary">เนื้อหา</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="tab/3.jpg" class="card-img-top " alt="...">
+            <div class="card-body text-center">
+              <p class="card-text">เข้าร่วมพิธีเจริญพระพุทธมนต์ถวายพระพรชัยมงคลแด่พระบาทสมเด็จพระเจ้าอยู่หัวและพระบรมวงศานุวงศ์ ประจำปีพุทธศักราช 2568 ครั้งที่ 6 ประจำเดือนมิถุนายน</p>
+              <button class="btn btn-primary">เนื้อหา</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="tab/4.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <p class="card-text">โครงการอบรมพัฒนาศักยภาพผู้เรียนด้าน “การสร้างจิตสำนึกในการเป็นผู้ประกอบการ และการเขียนแผนธุรกิจ” ประจำปีการศึกษา 2568</p>
+              <button class="btn btn-primary">เนื้อหา</button>
+            </div>
+          </div>
+        </div>
+      </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4 mt-3">
+        <div class="col">
+          <div class="card h-100">
+            <img src="tab/5.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <p class="card-text">โครงการบริจาคโลหิต เพื่อถวายเป็นพระราชกุศล เฉลิมพระเกียรติเนื่องในโอกาสวันเฉลิมพระชนมพรรษา พระบาทสมเด็จพระปรเมนทรรามาธิบดีศรีสินทรมหาวชิราลงกรณ พระวชิรเกล้าเจ้าอยู่หัว 28 กรกฎาคม 2568</p>
+              <button class="btn btn-primary">เนื้อหา</button>
+            </div>
+          </div>
+        </div>
+    <div class="col">
+          <div class="card h-100">
+            <img src="tab/6.jpg" class="card-img-top " alt="...">
+            <div class="card-body text-center">
+              <p class="card-text">เข้าร่วมพิธีเจริญพระพุทธมนต์ถวายพระพรชัยมงคลแด่พระบาทสมเด็จพระเจ้าอยู่หัว และพระบรมวงศานุวงศ์ ประจำปีพุทธศักราช 2568</p>
+              <button class="btn btn-primary">เนื้อหา</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="tab/7.jpg" class="card-img-top " alt="...">
+            <div class="card-body text-center">
+              <p class="card-text">พิธีอ่านสารวันต่อต้านยาเสพติดโลกและนำกล่าวปฏิญาณตน</p>
+              <button class="btn btn-primary">เนื้อหา</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="tab/8.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <p class="card-text">มอบทุนการศึกษา และใบเกียรติคุณบัตร เพื่อแสดงความชื่นชม นักเรียน-นักศึกษาที่มีจิตอาสาช่วยเหลือผู้อื่น</p>
+              <button class="btn btn-primary">เนื้อหา</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<style>
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px; /* ปรับความสูงตามต้องการ */
+  }
+
+  .card-text {
+    flex-grow: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* จำกัด 4 บรรทัด */
+    -webkit-box-orient: vertical;
+    text-align: left; /* หรือ center ก็ได้ */
+  }
+
+  .btn {
+    margin-top: 20px;
+    align-self: center;
+  }
+</style>
+  <!-- แท็บที่ 2 -->
+  <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab" tabindex="0">
+    รักนะคับจารย์
+  </div>
+
+  <!-- แท็บที่ 3 -->
+  <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab" tabindex="0">
+    มาทำอะไรหน้านี้คับ ผมยังไม่มีข้อมูล แฮะๆ
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>วิทยาลัยเทคนิคสัตหีบ กม.160 193 หมู่ 3 ต.นาจอมเทียน อ.สัตหีบ จ.ชลบุรี 20250</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
